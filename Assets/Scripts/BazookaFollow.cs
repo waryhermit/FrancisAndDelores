@@ -25,12 +25,5 @@ public class BazookaFollow : MonoBehaviour {
         float angle = (180 / Mathf.PI) * AngleRad;
 
         my.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
-        //body.rotation = angle;
     }
-    // Use this for initialization
- //   void Start () {
-	
-	//}
-	
-
 }
