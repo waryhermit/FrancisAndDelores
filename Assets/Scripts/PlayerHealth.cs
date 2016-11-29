@@ -12,7 +12,7 @@ public class PlayerHealth : NetworkBehaviour
 	public float hurtForce = 10f;				// The force with which the player is pushed when hurt.
 	public float damageAmount = 10f;			// The amount of damage to take when enemies touch the player
 
-	private SpriteRenderer healthBar;			// Reference to the sprite renderer of the health bar.
+	public SpriteRenderer healthBar;			// Reference to the sprite renderer of the health bar.
 	private float lastHitTime;					// The time at which the player was last hit.
 	private Vector3 healthScale;				// The local scale of the health bar initially (with full health).
 	private PlayerControl playerControl;		// Reference to the PlayerControl script.
@@ -23,12 +23,15 @@ public class PlayerHealth : NetworkBehaviour
 	{
 		// Setting up references.
 		playerControl = GetComponent<PlayerControl>();
+        //healthBar = (SpriteRenderer) Instantiate(healthBar, transform.position, transform.rotation);
 		healthBar = GameObject.Find("HealthBar").GetComponent<SpriteRenderer>();
 		anim = GetComponent<Animator>();
 
 		// Getting the intial scale of the healthbar (whilst the player has full health).
 		healthScale = healthBar.transform.localScale;
-	}
+        var p = GameObject.FindGameObjectWithTag("MainCamera");
+        Debug.Log("Argggg");
+    }
 
 
 	void OnCollisionEnter2D (Collision2D col)

@@ -13,7 +13,7 @@ public class Score : MonoBehaviour
 	void Awake ()
 	{
 		// Setting up the reference.
-		playerControl = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControl>();
+		//playerControl = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControl>();
 	}
 
 
@@ -25,7 +25,7 @@ public class Score : MonoBehaviour
 		// If the score has changed...
 		if(previousScore != score)
 			// ... play a taunt.
-			playerControl.StartCoroutine(playerControl.Taunt());
+			//playerControl.StartCoroutine(playerControl.Taunt());
 
 		// Set the previous score to this frame's score.
 		previousScore = score;

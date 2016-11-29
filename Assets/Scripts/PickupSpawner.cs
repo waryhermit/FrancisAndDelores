@@ -17,14 +17,14 @@ public class PickupSpawner : MonoBehaviour
 	void Awake ()
 	{
 		// Setting up the reference.
-		playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+	//	playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
 	}
 
 
 	void Start ()
 	{
 		// Start the first delivery.
-		StartCoroutine(DeliverPickup());
+	//	StartCoroutine(DeliverPickup());
 	}
 
 
