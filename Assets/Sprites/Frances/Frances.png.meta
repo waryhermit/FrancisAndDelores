@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5ea5d84b62c4d994192119f490622634
-timeCreated: 1476749155
+timeCreated: 1478204333
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -22,6 +22,8 @@ TextureImporter:
     21300030: Frances_15
     21300032: Frances_16
     21300034: Frances_17
+    21300036: Frances_18
+    21300038: Frances_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -66,7 +68,12 @@ TextureImporter:
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -92,7 +99,7 @@ TextureImporter:
         width: 67
         height: 124
       alignment: 9
-      pivot: {x: 0.4597054, y: 0.8701246}
+      pivot: {x: 0.47371298, y: 0.93345886}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -105,7 +112,7 @@ TextureImporter:
         width: 69
         height: 126
       alignment: 9
-      pivot: {x: 0.47652403, y: 0.8728202}
+      pivot: {x: 0.47724628, y: 0.9381937}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -299,6 +306,32 @@ TextureImporter:
         y: 7
         width: 194
         height: 558
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Frances_18
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 927
+        width: 62
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Frances_19
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 659
+        width: 145
+        height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
